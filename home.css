@@ -1,0 +1,190 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    background: url("images/study.jpg");
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+
+.container {
+    text-align: center;
+    width: 80%;
+    max-width: 1000px;
+    background: linear-gradient(grey);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+@keyframes zoomInEffect {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.2); /* Zoom in slightly */
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1); /* Return to original size */
+        opacity: 1;
+    }
+}
+
+.type.zoom-in {
+    font-size: 1.8em;
+    color: black; /* Default text color */
+    margin: 20px 0;
+    text-decoration: underline;
+    text-align: center; /* Center the text */
+    animation: zoomInEffect 2s ease-in-out infinite; /* Apply repeating zoom-in animation every 2 seconds */
+    transition: color 0.3s ease; /* Smooth transition for color change on hover */
+}
+
+.type.zoom-in:hover {
+    color: white; /* Change text color to black on hover */
+}
+
+.type.zoom-in a {
+    text-decoration: none; /* Remove underline from the link */
+    color: inherit; /* Inherit color from the parent */
+}
+
+.type.zoom-in a:hover {
+    color: inherit; /* Ensure color changes on hover are consistent */
+}
+
+
+
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-content h1 {
+    font-size: 40px;
+    color: white;
+    margin-right: 20px;
+}
+
+.header-gif {
+    max-width: 250px;
+    height: auto;
+}
+
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    animation: slideLeft 20s linear infinite;
+}
+
+@keyframes slideLeft {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.button-container {
+    margin: 20px;
+}
+
+button {
+    background:grey;
+    color: white;
+    padding: 25px 35px;
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 180px;
+    box-shadow: 0 4px 8px black;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+button img {
+    width: 120px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+button span {
+    font-size: 18px;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    background-color:black;
+}
+
+button:focus {
+    outline: none;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .header-content h1 {
+        font-size: 28px;
+    }
+
+    .header-gif {
+        max-width: 150px;
+    }
+
+    button {
+        width: 140px;
+        height: 140px;
+        padding: 15px;
+    }
+
+    button img {
+        width: 80px;
+        height: 70px;
+    }
+
+    .buttons {
+        flex-direction: column;
+        align-items: center;
+        animation: none;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        width: 85%;
+    }
+
+    button {
+        width: 160px;
+        height: 160px;
+    }
+}

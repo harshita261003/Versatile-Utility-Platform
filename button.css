@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    background: url("images/backbutton.avif");
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.fullview-container {
+    width: 90%;
+    max-width: 1200px;
+    text-align: center;
+    background:white
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0;
+}
+
+header {
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 48px;
+    color: #333;
+}
+
+.fullview-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.button-container {
+    margin: 20px;
+}
+
+button {
+    background: hsl(216, 96%, 18%);
+    color: white;
+    padding: 30px 40px;
+    border: none;
+    border-radius: 8px;
+    font-size: 24px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+button img {
+    width: 150px;
+    height: 120px;
+    margin-bottom: 10px;
+}
+
+button span {
+    font-size: 20px;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    background-color: #009de4;
+}
+
+button:focus {
+    outline: none;
+}
+
+@media screen and (max-width: 768px) {
+    .fullview-container {
+        width: 95%;
+        padding: 30px;
+    }
+
+    button {
+        width: 160px;
+        height: 160px;
+        padding: 20px;
+    }
+
+    button img {
+        width: 120px;
+        height: 100px;
+    }
+}
+
+#bottom-bar {
+    width: 100%;
+    padding: 10px 0;
+    background-color: hsl(216, 96%, 18%);
+    border-top: 2px solid lightblue;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+  }
+  
+  #bottom-bar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #009de4;
+    padding: 10px 20px;
+    border-radius: 3px;
+    transition: background-color 0.2s ease;
+  }
+  
+  #bottom-bar a:hover {
+    background-color:hsl(216, 96%, 18%);
+  }

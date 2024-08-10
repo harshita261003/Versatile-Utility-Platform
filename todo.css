@@ -1,0 +1,143 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('images/todo_bg.jpeg'); /* Replace with your background image */
+    background-size: cover;
+    color: #333;
+    margin-top: 50;
+    margin-bottom: 60;
+    padding: 0;
+}
+
+header {
+    background-image:url("images/pencil2.jpeg");
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+header font {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 3em;
+}
+
+.container {
+    margin-top: 20px;
+    padding: 0 15px;
+}
+
+.form-control {
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.btn-dark {
+    background-color: #343a40;
+    border: none;
+    border-radius: 20px;
+}
+
+.btn-dark:hover {
+    background-color: #495057;
+}
+
+.list-group-item {
+    border-radius: 15px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.list-group-item:hover {
+    background-color: #f1f1f1;
+    transform: scale(1.02);
+}
+
+.image-container {
+    position: fixed;
+    bottom: 70px; /* Aligns the container to the bottom */
+    left: 0;   /* Aligns the container to the left */
+    width: 200px; /* Width of the image container */
+    height: auto; /* Adjusts height automatically */
+    overflow: hidden;
+    z-index: 40; /* Ensure it is above other content, including the back button */
+}
+
+.left-image {
+    width: 100%;
+    height: auto; /* Adjusts height automatically */
+}
+
+#bottom-bar {
+    width: 100%;
+    padding: 10px 0;
+    background-color: #007bff;
+    border-top: 2px solid #0056b3;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1; /* Ensure it's below the image container */
+}
+
+
+#bottom-bar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #0056b3;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#bottom-bar a:hover {
+    background-color: #004494;
+    transform: scale(1.05);
+}
+
+.back-btn {
+    background-color: #dc3545; /* Red color for back button */
+}
+
+.back-btn:hover {
+    background-color: #c82333;
+}
+
+/* Add some animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.container h2, .container h3 {
+    animation: fadeIn 1s ease-in-out;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow: auto; /* This ensures scrollbars appear when needed */
+    height: 100%;
+  }
+
+/* For WebKit browsers */
+::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Track background */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #888; /* Scrollbar color */
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Scrollbar color on hover */
+  }
+  
+
